@@ -33,6 +33,8 @@ $(function() {
                 }
                 i++;
             }
+            $(".interval-confidence-level").val(jsonContent.config.intervalConfidenceLevel);
+            $(".use-multiple-test-correction").prop('checked', jsonContent.config.multipleTestingCorrection);
         };
     });
 });
